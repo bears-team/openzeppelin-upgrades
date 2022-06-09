@@ -46,6 +46,7 @@ export async function readValidations(
     if (acquireLock) {
       releaseLock = await lock(cachePath);
     }
+    console.log(cachePath);
     const data = JSON.parse(await fs.readFile(cachePath, 'utf8'));
     if (!isCurrentValidationData(data)) {
       await fs.unlink(cachePath);
