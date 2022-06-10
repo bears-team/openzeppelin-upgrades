@@ -1,6 +1,5 @@
 {
   "name": "openzeppelin-upgrades",
-  "version": "1.9.0",
   "private": true,
   "license": "MIT",
   "scripts": {
